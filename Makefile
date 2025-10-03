@@ -42,7 +42,7 @@ deb: build
 	echo "Section: utils" >> dist/deb/DEBIAN/control
 	echo "Priority: optional" >> dist/deb/DEBIAN/control
 	echo "Architecture: amd64" >> dist/deb/DEBIAN/control
-	echo "Maintainer: You <your-email@example.com>" >> dist/deb/DEBIAN/control
+	echo "Maintainer: You <garajamohan@gmail.com>" >> dist/deb/DEBIAN/control
 	echo "Description: Kubernetes resource differ" >> dist/deb/DEBIAN/control
 	dpkg-deb --build dist/deb dist/kdiff_$(VERSION)_amd64.deb
 
