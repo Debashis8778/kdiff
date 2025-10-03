@@ -42,6 +42,7 @@ release:
   draft: false
   prerelease: auto
   mode: replace
+  disable: false
 
 # Homebrew formula configuration
 brews:
