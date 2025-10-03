@@ -1,5 +1,5 @@
 APP=kdiff
-VERSION=0.1.0
+VERSION=1.0.2
 COMMIT=$(shell git rev-parse --short HEAD 2>/dev/null || echo "none")
 DATE=$(shell date -u +%Y-%m-%dT%H:%M:%SZ)
 
