@@ -75,12 +75,12 @@ func init() {
 	rootCmd.Flags().BoolVar(&opts.NoNeat, "no-neat", false, "skip kubectl neat processing (show raw YAML)")
 	rootCmd.Flags().StringVar(&opts.OutputFormat, "output", "unified", "output format: unified, context, side-by-side")
 	rootCmd.Flags().BoolVar(&opts.Verbose, "verbose", false, "enable verbose logging for debugging")
-	
+
 	// Add version flag that shows version and exits
 	rootCmd.Flags().BoolP("version", "v", false, "show version information")
 	rootCmd.SetVersionTemplate("kdiff {{.Version}} (commit " + commit + ", built " + date + ")\n")
 	rootCmd.Version = version
-	
+
 	// Add version subcommand
 	rootCmd.AddCommand(versionCmd)
 }
